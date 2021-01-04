@@ -10,6 +10,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-        }
+            string salut = "helloWorld";
+            Console.WriteLine(salut);
+            Console.Read();
+        }   
     }
 }
