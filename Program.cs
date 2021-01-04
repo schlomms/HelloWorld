@@ -12,6 +12,7 @@ namespace HelloWorld
         {
             string salut = "helloWorld";
             Console.WriteLine(salut);
+            Console.WriteLine($"{salut}");
             Console.WriteLine(salut.Length);
             Console.Read();
         }   
