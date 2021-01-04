@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace HelloWorld
 {
@@ -10,10 +11,13 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            string salut = "helloWorld";
-            Console.WriteLine(salut);
-            Console.WriteLine($"{salut}");
-            Console.WriteLine(salut.Length);
+            string Salut = "helloWorld";
+            DateTime dateActuelle = DateTime.Now;
+            Console.WriteLine(dateActuelle.ToString("r", CultureInfo.CreateSpecificCulture("fr-FR")));
+            Console.WriteLine(Salut);
+            Console.WriteLine(dateActuelle);
+            Console.WriteLine($"{Salut}");
+            Console.WriteLine(Salut.Length);
             Console.Read();
         }   
     }
